@@ -5,12 +5,12 @@ namespace Tyuiu.FilimonchukED.Sprint3.Task0.V30.Lib
     {
         public double GetMultiplySeries(int startValue, int stopValue)
         {
-            double p = 0;
+            double p = 1;
             for (int i = startValue; i <= stopValue; i++)
             {
-                p *= (i / (Math.Pow(Math.Sin(1), -10)));
+                p *= i / Math.Pow(Math.Sin(1),-10);
             }
-            return p;
+            return Math.Round(p,3);
         }
     }   
 }
