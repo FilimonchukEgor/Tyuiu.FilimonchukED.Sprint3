@@ -8,9 +8,9 @@ namespace Tyuiu.FilimonchukED.Sprint3.Task2.V6.Lib
             double res = 1;
             do
             {
-                res *= (Math.Pow(value, startValue) + 1) * Math.Cos(4);
+                res = res * ((Math.Pow(value, startValue) + 1) * Math.Cos(4));
                 startValue++;
-            } while (startValue < stopValue);
+            } while (startValue <= stopValue);
             return Math.Round(res,3);
         }
     }

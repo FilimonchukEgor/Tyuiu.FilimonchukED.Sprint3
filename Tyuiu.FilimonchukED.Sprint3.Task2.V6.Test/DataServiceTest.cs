@@ -12,7 +12,7 @@ namespace Tyuiu.FilimonchukED.Sprint3.Task2.V6.Test
             int stp = 10;
             double a = 0.25;
             double res = ds.GetMultiplySeries(a, strt, stp);
-            double wait = -0.03;
+            double wait = 0.019;
             Assert.AreEqual(wait, res);
         }
     }
