@@ -6,7 +6,7 @@ namespace Tyuiu.FilimonchukED.Sprint3.Task1.V27.Lib
         public double GetMultiplySeries(double value, int startValue, int stopValue)
         {
             double p = 1;
-            while (startValue < stopValue)
+            while (startValue <= stopValue)
             {
                 p *= Math.Pow(1 / Math.Pow(value, startValue), 3);
                 startValue++;
