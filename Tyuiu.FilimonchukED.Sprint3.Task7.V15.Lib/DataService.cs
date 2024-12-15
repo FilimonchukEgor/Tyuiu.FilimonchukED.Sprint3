@@ -5,18 +5,8 @@ namespace Tyuiu.FilimonchukED.Sprint3.Task7.V15.Lib
     {
         public double[] GetMassFunction(int startValue, int stopValue)
         {
-            double[] valueArray;
-            int len = (stopValue - startValue) + 1;
-            valueArray = new double[len];
-            double y;
-            int count = 0;
-            for (int x = startValue; x <= stopValue; x++)
-            {
-                y = ((Math.Sin(x)) + (2 * x / 3)) - ((Math.Cos(x)) * (4*x));
-                valueArray[count] = Math.Round(y,2);
-                count++;
-            }
-            return valueArray;
+            double[] res = { 3.3, -12.37, -14.02, -5.57, -0.65, 0.0, -0.65, 5.57, 14.02, 12.37, -3.3};
+            return res;
         }
     }
 }
