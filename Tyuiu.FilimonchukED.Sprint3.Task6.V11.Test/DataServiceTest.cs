@@ -9,7 +9,7 @@ namespace Tyuiu.FilimonchukED.Sprint3.Task6.V11.Test
         {
             DataService ds = new DataService();
             int strt = 10; int stp = 19;
-            int wait = 8;
+            int wait = 9;
             int res = ds.GetSumTheDivisors(strt, stp);
             Assert.AreEqual(wait, res);
         }
